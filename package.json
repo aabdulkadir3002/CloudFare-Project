@@ -1,0 +1,28 @@
+{
+    "name": "feedback-analytics-dashboard",
+    "version": "1.0.0",
+    "description": "Cloudflare Workers-based feedback aggregation and analytics dashboard for Product Managers",
+    "main": "worker.js",
+    "scripts": {
+      "deploy": "wrangler deploy",
+      "dev": "wrangler dev",
+      "tail": "wrangler tail",
+      "d1:create": "wrangler d1 create feedback-database",
+      "d1:schema": "wrangler d1 execute feedback-database --file=schema.sql",
+      "kv:create": "wrangler kv:namespace create FEEDBACK_CACHE"
+    },
+    "keywords": [
+      "cloudflare",
+      "workers",
+      "d1",
+      "kv",
+      "analytics",
+      "dashboard",
+      "feedback"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+      "wrangler": "^3.0.0"
+    }
+  }
