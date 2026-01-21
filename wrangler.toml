@@ -1,0 +1,13 @@
+name = "feedback-analytics-dashboard"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "FEEDBACK_DB"
+database_name = "feedback-database"
+database_id = "910dc83c-f006-448a-b3c7-c95b457954cc"
+
+[[kv_namespaces]]
+binding = "FEEDBACK_CACHE"
+id = "d100c6a25e7d458b9fc004d2e6e1de17"
+preview_id = "00000000000000000000000000000000"
